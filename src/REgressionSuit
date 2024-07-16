@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="true" name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="testNG_Prac.Example_DemoQA">
+        <methods>
+          <include name="VerifyTotalLinksONPage"/>
+        </methods>
+      </class>
+      <class name="testNG_Prac.Example_Handlingframes"/>
+    </classes>
+  </test>
+</suite> <!-- Suite -->
