@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNG_Prac.Example_DemoQA">
+      <class name="testNG_Prac.Paractice_expanding">
         <methods>
-          <include name="VerifyAlerts"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
+          <include name="close"/>
+          <include name="Lgin"/>
+          <include name="Setup"/>
         </methods>
-      </class> <!-- testNG_Prac.Example_DemoQA -->
+      </class> <!-- testNG_Prac.Paractice_expanding -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

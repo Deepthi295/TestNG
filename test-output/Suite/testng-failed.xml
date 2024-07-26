@@ -6,10 +6,10 @@
       <class name="testNG_Prac.Example_Handlingframes">
         <methods>
           <include name="Verifyresizable"/>
-          <include name="VerifiyDraggable"/>
           <include name="afterTest"/>
           <include name="Verifydroppable"/>
           <include name="beforeTest"/>
+          <include name="VerifySelectable"/>
         </methods>
       </class> <!-- testNG_Prac.Example_Handlingframes -->
     </classes>

@@ -10,7 +10,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 
 public class Example_Handlingframes {
 	WebDriver driver;
@@ -21,7 +23,7 @@ public class Example_Handlingframes {
 		driver.findElement(By.xpath("//a[text()='Draggable']")).click();
 		driver.switchTo().frame(0);
 		String test = driver.findElement(By.xpath("//div[@id='draggable']")).getText();
-		System.out.println("test1" + test);
+		//System.out.println("test1" + test);
 		action.clickAndHold(driver.findElement(By.id("draggable"))).build().perform();
 		action.moveByOffset(90, 90);
 		action.release().build().perform();
@@ -69,7 +71,7 @@ public class Example_Handlingframes {
 		
 	}
 
-	@BeforeTest
+	@BeforeMethod
 	public void beforeTest() {
 		driver = new ChromeDriver();
 		driver.get("https://jqueryui.com/");
@@ -79,7 +81,7 @@ public class Example_Handlingframes {
 
 	}
 
-	@AfterTest
+	@AfterMethod
 	public void afterTest() {
 		driver.quit();
 	}
