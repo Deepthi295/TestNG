@@ -20,7 +20,7 @@ public class Paractice_expanding {
   public void Lgin() {
 	  driver.findElement(By.name("username")).sendKeys("practice");
 	  driver.findElement(By.name("password")).sendKeys("SuperSecretPassword!");
-		driver.findElement(By.xpath("//button[@type='submit']")).click();
+	  driver.findElement(By.xpath("//button[@type='submit']")).click();
 
   }
   @BeforeTest
