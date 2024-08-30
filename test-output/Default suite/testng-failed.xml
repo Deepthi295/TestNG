@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNG_Prac.Example_HnadlingMultiple_Windows">
+      <class name="testNG_Prac.Automation_task1">
         <methods>
-          <include name="afterTest"/>
-          <include name="VerifyMultipletabs"/>
-          <include name="beforeTest"/>
+          <include name="VerifyLogin"/>
         </methods>
-      </class> <!-- testNG_Prac.Example_HnadlingMultiple_Windows -->
+      </class> <!-- testNG_Prac.Automation_task1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
